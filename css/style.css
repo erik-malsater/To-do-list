@@ -1,0 +1,99 @@
+body{
+    background-color: #152238;
+    font-family: Caveat;
+}
+
+.outerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.listBackground{
+    min-width: 25rem;
+    width: 40vw;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.optionsContainer, .listContainer, .sortContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionsContainer, .sortContainer{
+    margin: 0 auto 1rem auto;
+    min-width: 20rem;
+    width: 28vw;
+}
+
+.todoListBox, .hasDoneListBox{
+    height: 18rem;
+    display: inline-block;
+    width: 50%;
+}
+
+.hasDoneListBox{
+    border-left: 1px dashed darkgrey;
+}
+
+.listContainer h2{
+    margin-top: 0;
+}
+
+.listContainer{
+    margin-top: 3rem;
+}
+
+#addTaskTextField{
+    width: 15rem;
+    height: 1.15rem;
+    border: 1px solid darkgray;
+    padding-left: 0.2rem;
+}
+
+button{
+    height: 1.4rem;
+    background: none;
+    border: 1px solid darkgrey;
+}
+
+select{
+    height: 1.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;   
+    -webkit-border-radius: 0;    
+    -moz-border-radius: 0;      
+    border-radius: 0;  
+ }
+
+.listContainer div{
+    min-width: 12rem;
+}
+
+ul{
+    padding-inline-start: 2vw;
+}
+
+li{
+    list-style-type: none;
+}
+
+input[type="checkbox"]{
+    float: right;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+h1, h2{
+    text-align: center;
+    text-decoration: underline;
+} 
