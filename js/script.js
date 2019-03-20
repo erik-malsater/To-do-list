@@ -16,7 +16,7 @@ function todoListBase(){
     return todoListBase;
 }
 
-// Hämtar den aktuella sparade listan från session-storage och returnerar den.
+// Hämtar den aktuella sparade listan från local-storage och returnerar den.
 function todoList(){
     var string = localStorage.getItem('todoList');
     var todoList = JSON.parse(string);
@@ -35,7 +35,7 @@ function wipeLists(){
     }
 }
 
-// Gör egenskapen Done till true för den valda sysslan, sparar den till session storage,
+// Gör egenskapen Done till true för den valda sysslan, sparar den till local storage,
 // rensar listorna och skriver ut dem igen.
 function finishTask(id, list){
     for(let j = 0; j < list.length; j++) {
@@ -171,7 +171,7 @@ function init(){
     writeHasDoneList();
 }
 
-// Nollställer session-storage och initierar listan igen.
+// Nollställer local-storage och initierar listan igen.
 function resetToBase(){
     localStorage.removeItem('todoList');
     wipeLists();
